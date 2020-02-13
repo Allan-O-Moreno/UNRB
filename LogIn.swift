@@ -10,7 +10,7 @@ import SwiftUI
 
 struct LogIn: View {
     @State private var email: String = "Please Enter Email"
-    @State private var password: String = "Please Enter Password"
+    @State private var password: String = "Please Enter deez nutz"
     var body: some View {
         
         VStack {
