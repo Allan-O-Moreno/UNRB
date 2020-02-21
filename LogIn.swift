@@ -7,13 +7,21 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct LogIn: View {
     @State private var email: String = "Please Enter Email"
-    @State private var password: String = "Please Enter deez nutz"
+    @State private var password: String = "Please Enter Password"
+
+    
     var body: some View {
         
+      
         VStack {
+          
+            
+           Image("logo")
+            
                 Text("Login page")
                 
                 HStack {
@@ -24,12 +32,15 @@ struct LogIn: View {
                 } // end HStack
                 
                 HStack{
+                    
                 Text("Password: ")
                     TextField("Please enter your password", text: $password)
                         .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 3)
                 } // end Hstack
                 
-            } // end VStack
+        }
+
+          // end VStack
         
         
         
