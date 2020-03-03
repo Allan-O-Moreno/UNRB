@@ -14,3 +14,7 @@ to work with by exporting the FLASK_APP environment variable.
 export FLASK_APP=test.py
 flask run
 * Running on http://127.0.0.1:5000/
+
+
+DEPENDENCIES
+sudo pip install virtualenv
