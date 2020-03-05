@@ -14,22 +14,23 @@ struct LogIn: View {
     @State var username: String = ""
     @State var password: String = ""
     
+    @State var authenticationDidFail: Bool = false
+    
     
     var body: some View {
         VStack{
             HelloText()  // extract Subview, Text function
             UserImage() // function for image
-            TextField("Username", text: $username)
-            .padding()
-            .background(lightGreyColor)
-                .cornerRadius(5.0)
-                .padding(.bottom, 20)
-            SecureField("Password", text: $password)
-                .padding()
-                .background(lightGreyColor)
-                .cornerRadius(5.0)
-                .padding(.bottom, 20)
-                
+            UsernameTextField(username: $username) // passing the username date into our function
+            PasswordSecureField(password: $password)
+            if authenticationDidFail{
+                Text("Information not correct. Try again")
+            }
+            
+            Button(action: { print("Button Tapped")}){
+            LoginButtonContent()
+            
+            }
             
         }
     .padding()
@@ -61,5 +62,39 @@ struct UserImage: View {
             .clipped()
             .cornerRadius(150)
             .padding(.bottom,75)
+    }
+}
+
+struct LoginButtonContent: View {
+    var body: some View {
+        Text("LOGIN")
+            .font(.headline)
+            .foregroundColor(.white)
+            .padding()
+            .frame(width:220, height: 60)
+            .background(Color.black)
+            .cornerRadius(35.0)
+    }
+}
+
+struct UsernameTextField: View {
+    @Binding var username: String // creating a data connection from the state username variable
+    var body: some View {
+        TextField("Username", text: $username)
+            .padding()
+            .background(lightGreyColor)
+            .cornerRadius(5.0)
+            .padding(.bottom, 20)
+    }
+}
+
+struct PasswordSecureField: View {
+    @Binding var password: String // creating a data connection from the state password variable
+    var body: some View {
+        SecureField("Password", text: $password)
+            .padding()
+            .background(lightGreyColor)
+            .cornerRadius(5.0)
+            .padding(.bottom, 20)
     }
 }
