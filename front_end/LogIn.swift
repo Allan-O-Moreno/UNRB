@@ -1,54 +1,65 @@
 //
 //  LogIn.swift
-//  UNR_Classifier
+//  UNRB
 //
-//  Created by Allan Moreno on 2/13/20.
-//  Copyright © 2020 Allan Moreno. All rights reserved.
+//  Created by Allan Moreno on 3/4/20.
+//  Copyright © 2020 Carlos Varela. All rights reserved.
 //
 
 import SwiftUI
-import UIKit
+
+let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0)
 
 struct LogIn: View {
-    @State private var email: String = "Please Enter Email"
-    @State private var password: String = "Please Enter Password"
-
+    @State var username: String = ""
+    @State var password: String = ""
+    
     
     var body: some View {
-        
-      
-        VStack {
-          
+        VStack{
+            HelloText()  // extract Subview, Text function
+            UserImage() // function for image
+            TextField("Username", text: $username)
+            .padding()
+            .background(lightGreyColor)
+                .cornerRadius(5.0)
+                .padding(.bottom, 20)
+            SecureField("Password", text: $password)
+                .padding()
+                .background(lightGreyColor)
+                .cornerRadius(5.0)
+                .padding(.bottom, 20)
+                
             
-           Image("logo")
-            
-                Text("Login page")
-                
-                HStack {
-                    
-                    Text("Email: ")
-                    TextField("Please enter your email", text: $email)
-                        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 3)
-                } // end HStack
-                
-                HStack{
-                    
-                Text("Password: ")
-                    TextField("Please enter your password", text: $password)
-                        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 3)
-                } // end Hstack
-                
         }
-
-          // end VStack
-        
-        
-        
+    .padding()
+        }
     }
-}
+
 
 struct LogIn_Previews: PreviewProvider {
     static var previews: some View {
         LogIn()
+    }
+}
+
+struct HelloText: View {
+    var body: some View {
+        Text("Hello Students!")
+            .font(.largeTitle)
+            .fontWeight(.semibold)
+            .padding(.bottom, 20)
+    }
+}
+
+struct UserImage: View {
+    var body: some View {
+        Image("logo")
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(width: 150, height: 150)
+            .clipped()
+            .cornerRadius(150)
+            .padding(.bottom,75)
     }
 }
