@@ -19,7 +19,7 @@ struct WelcomePage: View {
         .padding(.bottom, 20)
         Text("If you dont have an account, Please Sign Up!")
             SignUpContent()
-        Text("If you already have an acoount, Please Sign In!")
+        Text("If you already have an account, Please Sign In!")
             SignInContent()
         
 
