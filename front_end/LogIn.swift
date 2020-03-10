@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+
 let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0)
 
 let storedUsername = "Allan"
@@ -98,7 +99,7 @@ struct UserImage: View {
 
 struct LoginButtonContent: View {
     var body: some View {
-        Text("LOGIN")
+        Text("LOGIN") //button content 
             .font(.headline)
             .foregroundColor(.white)
             .padding()
