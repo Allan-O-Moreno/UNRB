@@ -15,6 +15,7 @@
 		0742AF7B23EA33F200462F68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0742AF7923EA33F200462F68 /* LaunchScreen.storyboard */; };
 		133C077F24109C13006D2D49 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C077E24109C13006D2D49 /* LogIn.swift */; };
 		133C078124118A7F006D2D49 /* AboutMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C078024118A7F006D2D49 /* AboutMe.swift */; };
+		133C07832416CE63006D2D49 /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C07822416CE63006D2D49 /* WelcomePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0742AF7C23EA33F200462F68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		133C077E24109C13006D2D49 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 		133C078024118A7F006D2D49 /* AboutMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMe.swift; sourceTree = "<group>"; };
+		133C07822416CE63006D2D49 /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		0742AF6223EA33EA00462F68 = {
 			isa = PBXGroup;
 			children = (
+				133C07822416CE63006D2D49 /* WelcomePage.swift */,
 				133C078024118A7F006D2D49 /* AboutMe.swift */,
 				133C077E24109C13006D2D49 /* LogIn.swift */,
 				0742AF6D23EA33EA00462F68 /* UNRB */,
@@ -155,6 +158,7 @@
 				0742AF6F23EA33EA00462F68 /* AppDelegate.swift in Sources */,
 				133C078124118A7F006D2D49 /* AboutMe.swift in Sources */,
 				0742AF7123EA33EA00462F68 /* SceneDelegate.swift in Sources */,
+				133C07832416CE63006D2D49 /* WelcomePage.swift in Sources */,
 				0742AF7323EA33EA00462F68 /* ContentView.swift in Sources */,
 				133C077F24109C13006D2D49 /* LogIn.swift in Sources */,
 			);
