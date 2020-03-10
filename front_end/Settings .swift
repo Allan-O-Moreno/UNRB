@@ -21,8 +21,9 @@ struct Settings: View {
             .fontWeight(.semibold)
             .padding(.bottom, 50)
         Customize()
-        SignOut()
         Update()
+        SignOut()
+
         
         }
         
@@ -31,7 +32,7 @@ struct Settings: View {
 
 struct Customize: View {
     var body: some View {
-        Button("Account"){
+        Button("Account Settings"){
             
         }
         .padding(25)
