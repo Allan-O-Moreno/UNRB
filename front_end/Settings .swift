@@ -11,29 +11,46 @@ import UIKit
 
 struct Settings: View {
     var body: some View {
-        Text("Settings").font(.largeTitle).fontWeight(.semibold).padding(.bottom, 50)
-    }
+        
+        VStack{
+            
+        Image("settings")
+            
+        Text("Settings")
+            .font(.largeTitle)
+            .fontWeight(.semibold)
+            .padding(.bottom, 50)
+        Customize()
+        SignOut()
+        Update()
+        
+        }
+        
+    } 
 }
 
 struct Customize: View {
     var body: some View {
-        Button("Settings"){
+        Button("Account"){
             
-        }.padding(25)
+        }
+        .padding(25)
     }
 }
 
 struct SignOut: View {
     var body: some View {
         Button("Sign Out"){
-        }.padding(25)
+        }
+        .padding(25)
     }
 }
 struct Update: View {
     var body: some View {
         Button("Check for Software Update"){
             
-        }.padding(25)
+        }
+        .padding(25)
     }
 }
 
