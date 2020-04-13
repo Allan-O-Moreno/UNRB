@@ -20,7 +20,11 @@ struct LogIn: View {
     @State var authenticationDidFail: Bool = false
     @State var authenticationDidSucceed: Bool = false
     
+    @State private var showMenu = true
+    
     var body: some View {
+        
+       NavigationView{
        
         ZStack{  // everything stacked on top of each other
             
@@ -29,27 +33,39 @@ struct LogIn: View {
                     UserImage() // function for image
                     UsernameTextField(username: $username) // passing the username date into our function
                     PasswordSecureField(password: $password)
+                
+                
                     if authenticationDidFail{
                         Text("Information not correct. Try again")
                             .offset(y:-10)
                             .foregroundColor(.red)
-                    }
+                    } // end if didfail
+                
                 
                 Button(action: {   if self.username == storedUsername && self.password == storedPassword {
                     self.authenticationDidSucceed = true
                     self.authenticationDidFail = false
+                   
+                    
                 } else {
                     self.authenticationDidFail = true
                     self.authenticationDidSucceed = false
                     }
                     }
                 ) {
+                    NavigationLink(destination: MainMenu() ){
                    LoginButtonContent()
                     
-                }
+                } // end link
+            
                 
                 }
-                   
+                
+                NavigationLink(destination: SignUp_())
+                {
+                    Text("Sign Up")
+                }
+                    
             .padding()
             
             if authenticationDidSucceed {
@@ -65,7 +81,10 @@ struct LogIn: View {
     
         
         }
-    }
+    
+ }
+}
+}
 
 
 struct LogIn_Previews: PreviewProvider {
@@ -128,3 +147,4 @@ struct PasswordSecureField: View {
             .padding(.bottom, 20)
     }
 }
+

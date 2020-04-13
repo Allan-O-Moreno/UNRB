@@ -12,20 +12,14 @@ struct WelcomePage: View {
     var body: some View {
         
         VStack{
-        Image("wolf_logo ")
-        .resizable()
-        .aspectRatio(contentMode: .fill)
-        .frame(width: 250, height: 250)
-        .clipped()
-        .cornerRadius(150)
-        .padding(.bottom,75)
+            wolf_logo()
         Text("Welcome UNR Students!")
         .font(.largeTitle)
         .fontWeight(.semibold)
         .padding(.bottom, 20)
         Text("If you dont have an account, Please Sign Up!")
             SignUpContent()
-        Text("If you already have an acoount, Please Sign In!")
+        Text("If you already have an account, Please Sign In!")
             SignInContent()
         
 
@@ -53,6 +47,7 @@ struct SignUpContent: View {
             .frame(width:220, height: 60)
             .background(Color.black)
             .cornerRadius(35.0)
+            .padding()
     }
 }
 
@@ -65,5 +60,18 @@ struct SignInContent: View {
             .frame(width:220, height: 60)
             .background(Color.black)
             .cornerRadius(35.0)
+            .padding()
+    }
+}
+
+struct wolf_logo: View {
+    var body: some View {
+        Image("wolf_logo ")
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(width: 250, height: 250)
+            .clipped()
+            .cornerRadius(150)
+            .padding(.bottom,75)
     }
 }

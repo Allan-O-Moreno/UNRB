@@ -1,0 +1,13 @@
+The back_end will be a REST API.
+RULES
+We are going to use 'models' for database handling 
+And we use 'resources' for the object our client is going
+to interact with.
+
+This means that when we read/write from a database -> 'model'
+
+When we are receiving/sending data from the clients (website that classifies images) -> 'resource'.
+
+Both 'models' and 'resources' are classes.
+
+
