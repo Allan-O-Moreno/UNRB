@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		049704FC24450A88001CCE79 /* BInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049704FB24450A87001CCE79 /* BInfo.swift */; };
 		0497050024450AB3001CCE79 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049704FF24450AB3001CCE79 /* MapView.swift */; };
-		0497050224450AF1001CCE79 /* BList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497050124450AF1001CCE79 /* BList.swift */; };
+		04970504244512D5001CCE79 /* BList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04970503244512D4001CCE79 /* BList.swift */; };
 		072DCEFC24412595001E87D9 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DCEFB24412595001E87D9 /* ImagePicker.swift */; };
 		0742AF6F23EA33EA00462F68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0742AF6E23EA33EA00462F68 /* AppDelegate.swift */; };
 		0742AF7123EA33EA00462F68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0742AF7023EA33EA00462F68 /* SceneDelegate.swift */; };
@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		049704FB24450A87001CCE79 /* BInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BInfo.swift; sourceTree = "<group>"; };
 		049704FF24450AB3001CCE79 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		0497050124450AF1001CCE79 /* BList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BList.swift; path = ../../UNRB/front_end/BList.swift; sourceTree = "<group>"; };
+		04970503244512D4001CCE79 /* BList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BList.swift; sourceTree = "<group>"; };
 		072DCEFB24412595001E87D9 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		0742AF6B23EA33EA00462F68 /* UNRB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UNRB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0742AF6E23EA33EA00462F68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 				133C07822416CE63006D2D49 /* WelcomePage.swift */,
 				133C078024118A7F006D2D49 /* AboutMe.swift */,
 				133C077E24109C13006D2D49 /* LogIn.swift */,
-				0497050124450AF1001CCE79 /* BList.swift */,
+				04970503244512D4001CCE79 /* BList.swift */,
 				049704FB24450A87001CCE79 /* BInfo.swift */,
 				049704FF24450AB3001CCE79 /* MapView.swift */,
 				0742AF6D23EA33EA00462F68 /* UNRB */,
@@ -186,7 +186,7 @@
 				0497050024450AB3001CCE79 /* MapView.swift in Sources */,
 				133C07852417240C006D2D49 /* Settings .swift in Sources */,
 				0742AF6F23EA33EA00462F68 /* AppDelegate.swift in Sources */,
-				0497050224450AF1001CCE79 /* BList.swift in Sources */,
+				04970504244512D5001CCE79 /* BList.swift in Sources */,
 				133C078124118A7F006D2D49 /* AboutMe.swift in Sources */,
 				049704FC24450A88001CCE79 /* BInfo.swift in Sources */,
 				0742AF7123EA33EA00462F68 /* SceneDelegate.swift in Sources */,
