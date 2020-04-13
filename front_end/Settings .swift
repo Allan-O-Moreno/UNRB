@@ -2,7 +2,7 @@
 //  SwiftUIView.swift
 //  UNRB
 //
-//  Created by Johan  on 3/6/20.
+//  Created by Allan Moreno on 3/6/20.
 //  Copyright © 2020 Carlos Varela. All rights reserved.
 //
 
@@ -22,7 +22,15 @@ struct Settings: View {
             .padding(.bottom, 50)
         Customize()
         Update()
+        
+        NavigationLink(destination: ContactUs())
+        {
+            Text("Contact Us")
+        }
+
         SignOut()
+            
+        
 
         
         }

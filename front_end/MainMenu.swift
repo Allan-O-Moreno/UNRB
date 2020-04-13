@@ -2,7 +2,7 @@
 //  Menu.swift
 //  UNRB
 //
-//  Created by Johan  on 3/4/20.
+//  Created by Allan Moreno on 3/4/20.
 //  Copyright © 2020 Carlos Varela. All rights reserved.
 //
 
@@ -21,13 +21,15 @@ struct MainMenu: View {
             //Menu Title
             Menu()
             
-            CameraB()
+            //CameraB()
             
             NavigationLink(destination: BList())
             {
                 Text("Building List")
                 
             }
+            
+            
             
             NavigationLink(destination: Settings())
             {
@@ -40,6 +42,11 @@ struct MainMenu: View {
             {
                 Text("About Us")
                            
+            }
+            
+            NavigationLink(destination: CameraHandler())
+            {
+                Text("Camera")
             }
             
         }

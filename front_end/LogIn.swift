@@ -13,7 +13,10 @@ let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255
 let storedUsername = "Allan"
 let storedPassword = "Allan"
 
+
 struct LogIn: View {
+    
+
     @State var username: String = ""
     @State var password: String = ""
     
@@ -24,7 +27,7 @@ struct LogIn: View {
     
     var body: some View {
         
-       NavigationView{
+      // NavigationView{
        
         ZStack{  // everything stacked on top of each other
             
@@ -45,7 +48,9 @@ struct LogIn: View {
                 Button(action: {   if self.username == storedUsername && self.password == storedPassword {
                     self.authenticationDidSucceed = true
                     self.authenticationDidFail = false
-                   
+                    
+                    
+                    
                     
                 } else {
                     self.authenticationDidFail = true
@@ -53,28 +58,41 @@ struct LogIn: View {
                     }
                     }
                 ) {
-                    NavigationLink(destination: MainMenu() ){
+                   // NavigationLink(destination: MainMenu() ){
                    LoginButtonContent()
                     
-                } // end link
+                    
+               // } // end link
             
                 
                 }
                 
+                HStack{
+                Text("Dont Have an account?")
                 NavigationLink(destination: SignUp_())
                 {
-                    Text("Sign Up")
+                    
+                    
+                    Text("Sign Up!")
+                    
+                }
                 }
                     
             .padding()
             
             if authenticationDidSucceed {
-                Text("Login Succeeded!")
-                    .font(.headline)
-                    .frame(width:250, height: 80)
-                    .background(Color.yellow)
-                    .cornerRadius(20.0)
-                    .animation(Animation.default)
+          
+                NavigationLink(destination: MainMenu())
+                {
+//                    Text("Login Succeeded!")
+//                                  .font(.headline)
+//                                  .frame(width:250, height: 80)
+//                                  .background(Color.yellow)
+//                                  .cornerRadius(20.0)
+//                                  .animation(Animation.default)
+                    //LoginButtonContent()
+                    Text("Success! Click here to proceed")
+                }
             }
         }
         
@@ -84,7 +102,7 @@ struct LogIn: View {
     
  }
 }
-}
+//}
 
 
 struct LogIn_Previews: PreviewProvider {
@@ -116,7 +134,7 @@ struct UserImage: View {
 
 struct LoginButtonContent: View {
     var body: some View {
-        Text("LOGIN")
+        Text("Submit")
             .font(.headline)
             .foregroundColor(.white)
             .padding()

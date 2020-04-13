@@ -11,16 +11,21 @@ import SwiftUI
 struct WelcomePage: View {
     var body: some View {
         
+        NavigationView{
         VStack{
             wolf_logo()
-        Text("Welcome UNR Students!")
-        .font(.largeTitle)
-        .fontWeight(.semibold)
-        .padding(.bottom, 20)
-        Text("If you dont have an account, Please Sign Up!")
+            Greeting()
+            Text("If you dont have an account, Please Sign Up!")
+            NavigationLink(destination: SignUp_())
+            {
             SignUpContent()
+            }
+            
         Text("If you already have an account, Please Sign In!")
+            NavigationLink(destination: LogIn())
+            {
             SignInContent()
+            }
         
 
             
@@ -29,6 +34,7 @@ struct WelcomePage: View {
         
         
         }
+    }
       
 }
 
@@ -73,5 +79,14 @@ struct wolf_logo: View {
             .clipped()
             .cornerRadius(150)
             .padding(.bottom,75)
+    }
+}
+
+struct Greeting: View {
+    var body: some View {
+        Text("Welcome UNR Students!")
+            .font(.largeTitle)
+            .fontWeight(.semibold)
+            .padding(.bottom, 20)
     }
 }
