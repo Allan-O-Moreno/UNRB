@@ -9,8 +9,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+//
+//    init() {
+//               Webservice().getAllPosts{
+//                   print($0)
+//               }
+//           }
+//
+//
+    
+@State var model = PostListViewModel()
+    
     var body: some View {
         
+//        List(model.posts) { post in
+//            Text(post.title)
+//        }
+//
+//
         
         WelcomePage()
         //AboutMe()

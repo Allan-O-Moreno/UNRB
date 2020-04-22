@@ -25,6 +25,9 @@
 		133C078D24183704006D2D49 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C078C24183704006D2D49 /* MainMenu.swift */; };
 		133C079124183A00006D2D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 133C079024183A00006D2D49 /* Assets.xcassets */; };
 		133C079324183B6B006D2D49 /* ContactUs .swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C079224183B6B006D2D49 /* ContactUs .swift */; };
+		134AD300244FB5BB00CB2836 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134AD2FF244FB5BB00CB2836 /* Post.swift */; };
+		134AD303244FB5E600CB2836 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134AD302244FB5E600CB2836 /* Webservice.swift */; };
+		134AD306244FBA9600CB2836 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134AD305244FBA9600CB2836 /* PostListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		133C078C24183704006D2D49 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		133C079024183A00006D2D49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Downloads/Assets.xcassets; sourceTree = "<group>"; };
 		133C079224183B6B006D2D49 /* ContactUs .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactUs .swift"; sourceTree = "<group>"; };
+		134AD2FF244FB5BB00CB2836 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = SOURCE_ROOT; };
+		134AD302244FB5E600CB2836 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = SOURCE_ROOT; };
+		134AD305244FBA9600CB2836 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,9 @@
 		0742AF6223EA33EA00462F68 = {
 			isa = PBXGroup;
 			children = (
+				134AD304244FBA0100CB2836 /* View Models */,
+				134AD301244FB5C300CB2836 /* Services */,
+				134AD2FE244FB59200CB2836 /* Models */,
 				072DCEFB24412595001E87D9 /* ImagePicker.swift */,
 				076FE6EA244114F7000E0CCF /* CameraHandler.swift */,
 				133C079224183B6B006D2D49 /* ContactUs .swift */,
@@ -109,6 +118,30 @@
 				0742AF7723EA33F200462F68 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		134AD2FE244FB59200CB2836 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				134AD2FF244FB5BB00CB2836 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		134AD301244FB5C300CB2836 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				134AD302244FB5E600CB2836 /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		134AD304244FBA0100CB2836 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				134AD305244FBA9600CB2836 /* PostListViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +217,7 @@
 			files = (
 				072DCEFC24412595001E87D9 /* ImagePicker.swift in Sources */,
 				0497050024450AB3001CCE79 /* MapView.swift in Sources */,
+				134AD306244FBA9600CB2836 /* PostListViewModel.swift in Sources */,
 				133C07852417240C006D2D49 /* Settings .swift in Sources */,
 				0742AF6F23EA33EA00462F68 /* AppDelegate.swift in Sources */,
 				04970504244512D5001CCE79 /* BList.swift in Sources */,
@@ -193,10 +227,12 @@
 				133C078D24183704006D2D49 /* MainMenu.swift in Sources */,
 				133C07832416CE63006D2D49 /* WelcomePage.swift in Sources */,
 				0742AF7323EA33EA00462F68 /* ContentView.swift in Sources */,
+				134AD300244FB5BB00CB2836 /* Post.swift in Sources */,
 				133C079324183B6B006D2D49 /* ContactUs .swift in Sources */,
 				076FE6EB244114F7000E0CCF /* CameraHandler.swift in Sources */,
 				133C0789241808D9006D2D49 /* SignUp.swift in Sources */,
 				133C077F24109C13006D2D49 /* LogIn.swift in Sources */,
+				134AD303244FB5E600CB2836 /* Webservice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
