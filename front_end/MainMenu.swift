@@ -128,7 +128,7 @@ struct AboutB: View {
 
 struct CampusImage: View {
     var body: some View {
-        Image("campus")
+        Image("logo")
             .resizable()
             .aspectRatio(contentMode: .fill)
             .frame(width: 300, height: 300)

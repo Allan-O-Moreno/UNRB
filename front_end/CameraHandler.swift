@@ -21,22 +21,40 @@ struct ImageData: Codable{
     let imagebytes: Int
 }
 
-//
-//class config {
-//    let url = URL(string: "https://jsonplaceholder.typicode.com/posts")!
-//            var request = URLRequest(url: url)
-//            request.httpMethod = "POST"
-//             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-//                 
-//               
-//}
-//
 
 
 struct CameraHandler: View {
     
     
     
+    
+//    let url = URL(string: "https://unr-building-classifier.onrender.com/analyze")
+//
+////    guard let requestUrl = url else { fatalError() }
+////    // Prepare URL Request Object
+////    var request = URLRequest(url: requestUrl)
+////    request.httpMethod = "POST"
+////
+////    // HTTP Request Parameters which will be sent in HTTP Request Body
+////    let postString = "userId=300&title=My urgent task&completed=false";
+////    // Set HTTP Request Body
+////    request.httpBody = postString.data(using: String.Encoding.utf8);
+////    // Perform HTTP Request
+////    let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+////
+////            // Check for Error
+////            if let error = error {
+////                print("Error took place \(error)")
+////                return
+////            }
+////
+////            // Convert HTTP Response Data to a String
+////            if let data = data, let dataString = String(data: data, encoding: .utf8) {
+////                print("Response data string:\n \(dataString)")
+////            }
+////    }
+////    task.resume()
+////
 
     
     @State private var showSheet: Bool = false
@@ -83,6 +101,8 @@ struct CameraHandler: View {
             ImagePicker(image: self.$image, isShown: self.$showImagePicker, sourceType: self.sourceType)
         }
     }
+    
+    
     
 
 }
