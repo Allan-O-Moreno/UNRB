@@ -23,29 +23,52 @@ struct SignUp_: View {
         VStack{
         
             
-            wolfy()
+            HStack{
+                wolfy()
+                    
+                
+                SignUp()
+                
+                
+                wolfy()
+            }
             
-        
-            SignUp()
             
+            
+            
+            Text("Please enter a username")
             UserNameContent(username: $username)
             
-
+            
+            
+            Text("Please enter your email")
             EmailContent(email: $email)
             
-
+            
+            
+            Text("Please enter a password")
             PasswordContent(password: $password)
-
+            
+            
+             
+            Text("Confirm Password")
             ReEnterPasswordContent(verify_password: $verify_password)
             
+            
+            
             CreateAccountContent()
+            
+           // Text("test")
+            
+
         
         }
+    }
         
     
         
     }
-}
+
 
 struct SignUp__Previews: PreviewProvider {
     static var previews: some View {
@@ -67,10 +90,10 @@ struct wolfy: View {
         Image("wolfy")
             .resizable()
             //.aspectRatio(contentMode: .fill)
-            .frame(width: 250, height: 250)
+            .frame(width: 100, height: 100)
             .clipped()
             .cornerRadius(150)
-            .padding(.bottom,75)
+            .padding(.bottom)
     }
 }
 
@@ -132,3 +155,4 @@ struct ReEnterPasswordContent: View {
             .padding(.bottom, 20)
     }
 }
+

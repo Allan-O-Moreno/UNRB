@@ -34,7 +34,10 @@ struct LogIn: View {
             VStack{
                     HelloText()  // extract Subview, Text function
                     UserImage() // function for image
+            
+                    Text("Please enter your username")
                     UsernameTextField(username: $username) // passing the username date into our function
+                    Text("Please enter your password")
                     PasswordSecureField(password: $password)
                 
                 
@@ -123,12 +126,12 @@ struct HelloText: View {
 struct UserImage: View {
     var body: some View {
         Image("logo")
-            .resizable()
-            .aspectRatio(contentMode: .fill)
-            .frame(width: 150, height: 150)
-            .clipped()
-            .cornerRadius(150)
-            .padding(.bottom,75)
+          .resizable()
+          .aspectRatio(contentMode: .fill)
+          .frame(width: 250, height: 250)
+          .clipped()
+          .cornerRadius(150)
+          .padding(.bottom,75)
     }
 }
 
