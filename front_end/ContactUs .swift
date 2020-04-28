@@ -22,7 +22,7 @@ struct ContactUs: View {
     var body: some View {
         VStack{
             
-            Image("mail ")
+            Image("logo")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 150, height: 150)
