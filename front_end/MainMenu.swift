@@ -21,33 +21,78 @@ struct MainMenu: View {
             //Menu Title
             Menu()
             
+            
             //CameraB()
             
+            
+            
+            HStack{
             NavigationLink(destination: BList())
             {
-                Text("Building List")
+            
+                    
+                BListContent()
+                    
+                
                 
             }
+                BuildingImage()
+                
+            } // End HStack
             
             
+
             
+            
+            HStack{
             NavigationLink(destination: Settings())
             {
-                Text("Settings")
+                SettingsContent()
+                               
             }
+                
+                Image("settings")
+                .resizable()
+                //.aspectRatio(contentMode: .fill)
+                .frame(width: 100, height: 100)
+                .clipped()
+                .cornerRadius(150)
+                .padding(.bottom)
+                
+            }// End HStack
             
             
-            
+            HStack{
             NavigationLink(destination: AboutMe())
             {
-                Text("About Us")
+                AboutMeContent()
+                               
                            
             }
+                AboutUsImage()
+                
+                
+            } // End HStack
             
+            
+            HStack{
+                
             NavigationLink(destination: CameraHandler())
             {
-                Text("Camera")
+                CameraContent()
+                               
             }
+            
+            Image("ihpone")
+            .resizable()
+            //.aspectRatio(contentMode: .fill)
+            .frame(width: 100, height: 100)
+            .clipped()
+            .cornerRadius(150)
+            .padding(.bottom)
+                
+                
+            } // End HStack
             
         }
     }
@@ -64,7 +109,10 @@ struct Menu_Previews: PreviewProvider {
 struct Menu: View {
     var body: some View {
         VStack{
-            Text("Menu").font(.largeTitle).fontWeight(.semibold).padding(.bottom, 50)
+            Text("Menu")
+            .font(.largeTitle)
+            .fontWeight(.semibold)
+           // .padding()
         }
     }
 }
@@ -131,10 +179,86 @@ struct CampusImage: View {
         Image("logo")
             .resizable()
             .aspectRatio(contentMode: .fill)
-            .frame(width: 300, height: 300)
+            .frame(width: 250, height: 250)
             .clipped()
             .cornerRadius(150)
-            .padding(.bottom,75)
+            //.padding(.bottom,75)
     }
 }
 
+
+struct BListContent: View {
+    var body: some View {
+        Text("Building List")
+            .font(.headline)
+            .foregroundColor(.white)
+            .padding()
+            .frame(width:230, height: 60)
+            .background(Color.blue)
+            .cornerRadius(35.0)
+            .padding()
+    }
+}
+
+struct SettingsContent: View {
+    var body: some View {
+        Text("Settings")
+            .font(.headline)
+            .foregroundColor(.white)
+            .padding()
+            .frame(width:230, height: 60)
+            .background(Color.blue)
+            .cornerRadius(35.0)
+            .padding()
+    }
+}
+
+struct AboutMeContent: View {
+    var body: some View {
+        Text("About Us")
+            .font(.headline)
+            .foregroundColor(.white)
+            .padding()
+            .frame(width:230, height: 60)
+            .background(Color.blue)
+            .cornerRadius(35.0)
+            .padding()
+    }
+}
+
+struct CameraContent: View {
+    var body: some View {
+        Text("Camera")
+            .font(.headline)
+            .foregroundColor(.white)
+            .padding()
+            .frame(width:230, height: 60)
+            .background(Color.blue)
+            .cornerRadius(35.0)
+            .padding()
+    }
+}
+
+struct BuildingImage: View {
+    var body: some View {
+        Image("building")
+            .resizable()
+            //.aspectRatio(contentMode: .fill)
+            .frame(width: 100, height: 100)
+            .clipped()
+            .cornerRadius(150)
+            .padding(.bottom)
+    }
+}
+
+struct AboutUsImage: View {
+    var body: some View {
+        Image("team_1")
+            .resizable()
+            //.aspectRatio(contentMode: .fill)
+            .frame(width: 100, height: 100)
+            .clipped()
+            .cornerRadius(150)
+            .padding(.bottom)
+    }
+}
