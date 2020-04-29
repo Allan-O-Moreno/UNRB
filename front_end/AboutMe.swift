@@ -26,11 +26,7 @@ struct AboutMe: View {
                 .fontWeight(.semibold)
                 // .padding()
            // }
-            
-            
-    
         
-            
             
             
            
@@ -50,9 +46,6 @@ struct AboutMe: View {
                 
             }
         
-            
-        
-            
 
 
             
@@ -69,12 +62,12 @@ struct AboutMe_Previews: PreviewProvider {
 
 struct GroupImage: View {
     var body: some View {
-        Image("team")
+        Image("team_1")
             .resizable()
-            .aspectRatio(contentMode: .fill)
+            //.aspectRatio(contentMode: .fill)
             .frame(width: 350, height: 350)
             .clipped()
-            .cornerRadius(150)
+            .cornerRadius(550)
             .padding(.bottom)
         
     }
