@@ -14,9 +14,9 @@
 		0742AF6F23EA33EA00462F68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0742AF6E23EA33EA00462F68 /* AppDelegate.swift */; };
 		0742AF7123EA33EA00462F68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0742AF7023EA33EA00462F68 /* SceneDelegate.swift */; };
 		0742AF7323EA33EA00462F68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0742AF7223EA33EA00462F68 /* ContentView.swift */; };
-		0742AF7823EA33F200462F68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0742AF7723EA33F200462F68 /* Preview Assets.xcassets */; };
 		0742AF7B23EA33F200462F68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0742AF7923EA33F200462F68 /* LaunchScreen.storyboard */; };
 		076FE6EB244114F7000E0CCF /* CameraHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076FE6EA244114F7000E0CCF /* CameraHandler.swift */; };
+		13168222245A3C59000C340F /* Assets .xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13168221245A3C59000C340F /* Assets .xcassets */; };
 		133C077F24109C13006D2D49 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C077E24109C13006D2D49 /* LogIn.swift */; };
 		133C078124118A7F006D2D49 /* AboutMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C078024118A7F006D2D49 /* AboutMe.swift */; };
 		133C07832416CE63006D2D49 /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C07822416CE63006D2D49 /* WelcomePage.swift */; };
@@ -27,7 +27,6 @@
 		134AD300244FB5BB00CB2836 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134AD2FF244FB5BB00CB2836 /* Post.swift */; };
 		134AD303244FB5E600CB2836 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134AD302244FB5E600CB2836 /* Webservice.swift */; };
 		134AD306244FBA9600CB2836 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134AD305244FBA9600CB2836 /* PostListViewModel.swift */; };
-		13583153245A189F00C3727A /* Assets.xcassets 13-18-02-141.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13583152245A189F00C3727A /* Assets.xcassets 13-18-02-141.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,10 +38,10 @@
 		0742AF6E23EA33EA00462F68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0742AF7023EA33EA00462F68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0742AF7223EA33EA00462F68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0742AF7723EA33F200462F68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0742AF7A23EA33F200462F68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0742AF7C23EA33F200462F68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		076FE6EA244114F7000E0CCF /* CameraHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraHandler.swift; sourceTree = "<group>"; };
+		13168221245A3C59000C340F /* Assets .xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Assets .xcassets"; path = "UNRB/Assets .xcassets"; sourceTree = "<group>"; };
 		133C077E24109C13006D2D49 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 		133C078024118A7F006D2D49 /* AboutMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMe.swift; sourceTree = "<group>"; };
 		133C07822416CE63006D2D49 /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
@@ -53,7 +52,6 @@
 		134AD2FF244FB5BB00CB2836 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = SOURCE_ROOT; };
 		134AD302244FB5E600CB2836 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = SOURCE_ROOT; };
 		134AD305244FBA9600CB2836 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = SOURCE_ROOT; };
-		13583152245A189F00C3727A /* Assets.xcassets 13-18-02-141.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Assets.xcassets 13-18-02-141.xcassets"; path = "../../../../.Trash/Assets.xcassets 13-18-02-141.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +68,7 @@
 		0742AF6223EA33EA00462F68 = {
 			isa = PBXGroup;
 			children = (
+				13168221245A3C59000C340F /* Assets .xcassets */,
 				134AD304244FBA0100CB2836 /* View Models */,
 				134AD301244FB5C300CB2836 /* Services */,
 				134AD2FE244FB59200CB2836 /* Models */,
@@ -103,7 +102,6 @@
 			children = (
 				0742AF6E23EA33EA00462F68 /* AppDelegate.swift */,
 				0742AF7023EA33EA00462F68 /* SceneDelegate.swift */,
-				13583152245A189F00C3727A /* Assets.xcassets 13-18-02-141.xcassets */,
 				0742AF7223EA33EA00462F68 /* ContentView.swift */,
 				0742AF7C23EA33F200462F68 /* Info.plist */,
 				0742AF7623EA33F200462F68 /* Preview Content */,
@@ -115,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				0742AF7923EA33F200462F68 /* LaunchScreen.storyboard */,
-				0742AF7723EA33F200462F68 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -203,8 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0742AF7B23EA33F200462F68 /* LaunchScreen.storyboard in Resources */,
-				0742AF7823EA33F200462F68 /* Preview Assets.xcassets in Resources */,
-				13583153245A189F00C3727A /* Assets.xcassets 13-18-02-141.xcassets in Resources */,
+				13168222245A3C59000C340F /* Assets .xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

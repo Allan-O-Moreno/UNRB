@@ -38,7 +38,7 @@ struct AboutMe: View {
             .padding()
             
             Button(action:{   // if the button is pressed go to senior projects website
-                UIApplication.shared.open(URL(string:"https://jmyamssi.wixsite.com/unrbc")!)
+                UIApplication.shared.open(URL(string:"https://jmyamssi.wixsite.com/unrbc")!) // website url will open
             } ){
                 
 //       UIApplication.shared.open(URL(string:"https://fitness.unr.edu/Facility/ReservationRequest")!)
