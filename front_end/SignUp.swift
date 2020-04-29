@@ -23,7 +23,7 @@ struct SignUp_: View {
         VStack{
         
             
-            HStack{
+            HStack{  // HStacks are used to display contents horizontally to each other
                 wolfy()
                     
                 

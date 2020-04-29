@@ -11,7 +11,7 @@ import SwiftUI
 struct AboutMe: View {
     var body: some View {
         
-        VStack{
+        VStack{ // contents place on vertically on the application
             
           
         
@@ -37,7 +37,7 @@ struct AboutMe: View {
         .fontWeight(.semibold)
             .padding()
             
-            Button(action:{
+            Button(action:{   // if the button is pressed go to senior projects website
                 UIApplication.shared.open(URL(string:"https://jmyamssi.wixsite.com/unrbc")!)
             } ){
                 
