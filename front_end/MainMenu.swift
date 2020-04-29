@@ -51,13 +51,7 @@ struct MainMenu: View {
                                
             }
                 
-                Image("settings")
-                .resizable()
-                //.aspectRatio(contentMode: .fill)
-                .frame(width: 100, height: 100)
-                .clipped()
-                .cornerRadius(150)
-                .padding(.bottom)
+                SettingsImage()
                 
             }// End HStack
             
@@ -83,13 +77,7 @@ struct MainMenu: View {
                                
             }
             
-            Image("ihpone")
-            .resizable()
-            //.aspectRatio(contentMode: .fill)
-            .frame(width: 100, height: 100)
-            .clipped()
-            .cornerRadius(150)
-            .padding(.bottom)
+                CameraImage()
                 
                 
             } // End HStack
@@ -179,9 +167,11 @@ struct CampusImage: View {
         Image("logo")
             .resizable()
             .aspectRatio(contentMode: .fill)
-            .frame(width: 250, height: 250)
+            .frame(width: 150, height: 150)
             .clipped()
             .cornerRadius(150)
+            //.padding(.bottom,75)
+
             //.padding(.bottom,75)
     }
 }
@@ -254,6 +244,30 @@ struct BuildingImage: View {
 struct AboutUsImage: View {
     var body: some View {
         Image("team_1")
+            .resizable()
+            //.aspectRatio(contentMode: .fill)
+            .frame(width: 100, height: 100)
+            .clipped()
+            .cornerRadius(150)
+            .padding(.bottom)
+    }
+}
+
+struct CameraImage: View {
+    var body: some View {
+        Image("ihpone")
+            .resizable()
+            //.aspectRatio(contentMode: .fill)
+            .frame(width: 100, height: 100)
+            .clipped()
+            .cornerRadius(150)
+            .padding(.bottom)
+    }
+}
+
+struct SettingsImage: View {
+    var body: some View {
+        Image("settings")
             .resizable()
             //.aspectRatio(contentMode: .fill)
             .frame(width: 100, height: 100)

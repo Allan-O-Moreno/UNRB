@@ -11,12 +11,12 @@ import SwiftUI
 struct WelcomePage: View {
     var body: some View {
         
-        NavigationView{
+        NavigationView{   // navigation view to navigate around the app 
         VStack{
             wolf_logo()
             Greeting()
             Text("If you dont have an account, Please Sign Up!")
-            NavigationLink(destination: SignUp_())
+            NavigationLink(destination: SignUp_()) // navigation links used to transtion to the next page in the application
             {
             SignUpContent()
             }
@@ -46,7 +46,7 @@ struct WelcomePage_Previews: PreviewProvider {
 
 struct SignUpContent: View {
     var body: some View {
-        Text("Sign Up")
+        Text("Sign Up")   // attributes below i.e .font , and so forth is what gives the buttons the designs in swift
             .font(.headline)
             .foregroundColor(.white)
             .padding()

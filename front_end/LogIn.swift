@@ -10,6 +10,7 @@ import SwiftUI
 
 let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0)
 
+//defualt username and password
 let storedUsername = "Allan"
 let storedPassword = "allan"
 
@@ -31,7 +32,7 @@ struct LogIn: View {
        
         ZStack{  // everything stacked on top of each other
             
-            VStack{
+            VStack{    // vertically stacks contents
                     HelloText()  // extract Subview, Text function
                     UserImage() // function for image
             
@@ -41,23 +42,24 @@ struct LogIn: View {
                     PasswordSecureField(password: $password)
                 
                 
-                    if authenticationDidFail{
+                    if authenticationDidFail{ //if info failed then display red message saying information is not correct 
                         Text("Information not correct. Try again")
                             .offset(y:-10)
                             .foregroundColor(.red)
                     } // end if didfail
                 
                 
-                Button(action: {   if self.username == storedUsername && self.password == storedPassword {
+                Button(action: {   if self.username == storedUsername && self.password == storedPassword { // if statement to compare account and password match with the defualt account and password
                     self.authenticationDidSucceed = true
                     self.authenticationDidFail = false
-                    
+                    // if succesful proceed to ap
                     
                     
                     
                 } else {
                     self.authenticationDidFail = true
                     self.authenticationDidSucceed = false
+                    // else display red error message
                     }
                     }
                 ) {
@@ -83,6 +85,7 @@ struct LogIn: View {
                     
             .padding()
             
+                // display that info is correct then user will click the "Success! Click here to proceed" to continue in the application
             if authenticationDidSucceed {
           
                 NavigationLink(destination: MainMenu())
@@ -131,7 +134,7 @@ struct UserImage: View {
           .frame(width: 250, height: 250)
           .clipped()
           .cornerRadius(150)
-          .padding(.bottom,75)
+          .padding(.bottom,45)
     }
 }
 
@@ -161,7 +164,7 @@ struct UsernameTextField: View {
 struct PasswordSecureField: View {
     @Binding var password: String // creating a data connection from the state password variable
     var body: some View {
-        SecureField("Password", text: $password)
+        SecureField("Password", text: $password) // secure filed used so when user enters their password, it cannot be seen, privacy is protected
             .padding()
             .background(lightGreyColor)
             .cornerRadius(5.0)

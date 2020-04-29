@@ -29,7 +29,7 @@ struct ContentView: View {
 //
 //
         
-        WelcomePage()
+        WelcomePage()  // applicaiton will start at the We
         //AboutMe()
         
         
