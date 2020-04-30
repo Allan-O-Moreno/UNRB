@@ -55,12 +55,12 @@ struct BList1: View {
                     Text("Davidson Math and Science")
                     
                 }
-                /*NavigationLink(destination: EJCH())
+                NavigationLink(destination: EJCH())
                 {
                     Text("Edmund J. Cain Hall")
                     
-                }*/
-                NavigationLink(destination: WFC())
+                }
+                NavigationLink(destination: EWFC())
                 {
                     Text("E.L. Wiegand Fitness Center")
                     
@@ -83,11 +83,6 @@ struct BList1: View {
                 NavigationLink(destination: MIKC())
                 {
                     Text("Mathewson-IGT Knowledge Center")
-                    
-                }
-                NavigationLink(destination: SLH())
-                {
-                    Text("Schulich Lecture Hall")
                     
                 }
                 NavigationLink(destination: SEM())
