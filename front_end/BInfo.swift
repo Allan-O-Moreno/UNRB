@@ -20,7 +20,7 @@ struct AB: View {
                 .padding(.bottom)
             Text("Ansari Business Building").fontWeight(.bold)
             HStack{
-            NavigationLink(destination: MapViewAB())
+            NavigationLink(destination: Schedules())
             {
                 SchedulesContent()
                 
@@ -99,7 +99,7 @@ struct DMSC: View {
                 .padding(.bottom)
             
             
-            NavigationLink(destination: MapViewDMSC())
+            NavigationLink(destination: Schedules())
             {
                 SchedulesContent()
                 
@@ -138,7 +138,7 @@ struct EJCH: View {
             Text("Edmund J. Cain Hall").fontWeight(.bold)
             
             HStack{
-            NavigationLink(destination: MapViewEJCH())
+            NavigationLink(destination: Schedules())
             {
                 SchedulesContent()
                 
@@ -331,7 +331,7 @@ struct MSS: View {
                 .fontWeight(.bold)
                 .padding(.bottom)
              
-             NavigationLink(destination: MapViewMSS())
+             NavigationLink(destination: Schedules())
              {
                  SchedulesContent()
                  
@@ -533,7 +533,7 @@ struct WRB: View {
                 .padding(.bottom,75)
             Text("William J. Raggio").fontWeight(.bold)
             HStack{
-            NavigationLink(destination: MapViewWRB())
+            NavigationLink(destination: Schedules())
             {
                 SchedulesContent()
                 
@@ -571,10 +571,25 @@ struct WRB: View {
 }
 struct BInfo_Previews: PreviewProvider {
     static var previews: some View {
-        PSAC()
+        Schedules()
     }
 }
 
+struct Schedules: View {
+    var body: some View {
+        VStack{
+        Text("The Schedules features are coming soon.")
+            .padding()
+            .padding()
+        Text("Due to the the current Coronavirus pandemic, acquiring UNR Database informations is not currently available.")
+            .padding()
+            .padding()
+        Text("Thank you for your patience.")
+            .padding()
+            .padding()
+        }
+    }
+}
 
 struct SchedulesContent: View {
     var body: some View {
